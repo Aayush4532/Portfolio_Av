@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Style from "./boot.module.css";
-
+import photo from './images/photos.jpg';
 const Boot = ({ onLogin }) => {
   const fullName = "Aayush Verma";
   const [currentText, setCurrentText] = useState(""); 
@@ -8,7 +8,7 @@ const Boot = ({ onLogin }) => {
     if (currentText.length < fullName.length) {
       const typingInterval = setTimeout(() => {
         setCurrentText(fullName.slice(0, currentText.length + 1));
-      }, 150);
+      }, 75);
 
       return () => clearTimeout(typingInterval); 
     }
@@ -18,7 +18,7 @@ const Boot = ({ onLogin }) => {
     <div className={Style.container}>
       <div className={Style.profile}>
         <div className={Style.avatar}>
-          <img src="assets/photos.jpg" alt="Profile Avatar" />
+          <img src= {photo} alt="Profile Avatar" />
         </div>
         <div className={Style.text}>
           {currentText}

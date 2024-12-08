@@ -1,6 +1,14 @@
 import React from "react";
 import Style from "./home.module.css";
-
+import apple from './images/apple.svg';
+import linkedin from './images/linkedin.png';
+import github from './images/github.png';
+import browser from './images/browser.png';
+import leetcode from './images/leetcode.png';
+import folder from './images/folder.svg';
+import notes from './images/notes.png';
+import messages from './images/messages.png';
+import photos from './images/photos.png';
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -58,7 +66,7 @@ class Home extends React.Component {
           <div className={Style.header}>
             <div className={Style["header-left"]}>
               <span className={Style.logo}>
-                <img src="assets/apple.svg" alt="Logo" />
+                <img src= {apple} alt="Logo" />
               </span>
               <a href="#finder" className={Style.lefta}>
                 Finder
@@ -73,21 +81,21 @@ class Home extends React.Component {
             <div className={Style["header-right"]}>
               <a href="https://www.linkedin.com/in/karamjeet-sony">
                 <img
-                  src="assets/linkedin.svg"
-                  alt=""
+                  src= {linkedin}
+                  alt="LinkedIn"
                   className={Style.iconmy}
                 />
               </a>
               <a href="https://leetcode.com/u/Splasher777/">
                 <img
-                  src="assets/leetcode.png"
+                  src= {leetcode}
                   alt="LeetCode"
                   className={Style.iconmy}
                 />
               </a>
               <a href="https://github.com/Aayush4532">
                 <img
-                  src="assets/github.png"
+                  src= {github}
                   alt="GitHub"
                   className={Style.iconmy}
                 />
@@ -100,28 +108,28 @@ class Home extends React.Component {
           <div className={Style.docker}>
             <a href="#notes">
               <img
-                src="assets/notes.png"
+                src= {notes}
                 alt="Notes"
                 className={Style.dockerimg}
               />
             </a>
             <a href="#messages">
               <img
-                src="assets/messages.png"
+                src = { messages }
                 alt="Messages"
                 className={Style.dockerimg}
               />
             </a>
             <a href="#browser">
               <img
-                src="assets/browser.png"
+                src= {browser}
                 alt="Browser"
                 className={Style.dockerimg}
               />
             </a>
             <a href="#photos">
               <img
-                src="assets/photos.png"
+                src= {photos}
                 alt="Photos"
                 className={Style.dockerimg}
               />
@@ -129,7 +137,7 @@ class Home extends React.Component {
             <div className={Style.divider}></div>
             <a href="#extra">
               <img
-                src="assets/notes.png"
+                src= {notes}
                 alt="Extra Notes"
                 className={Style.dockerimg}
               />
@@ -138,11 +146,11 @@ class Home extends React.Component {
           <div className={Style.left}>
             <div className={Style.folder}>
               <a href="#projects">
-                <img src="assets/folder.svg" alt="Folder" />
+                <img src= { folder } alt="Folder" />
               </a>
               <p>Our Projects</p>
               <a href="#resume">
-                <img src="assets/folder.svg" alt="Folder" />
+                <img src= { folder } alt="Folder" />
               </a>
               <p>My Resume</p>
             </div>
